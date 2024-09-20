@@ -7,56 +7,9 @@
     <link rel="stylesheet" href="./src/styles/style.css" />
     <title>Audio-player</title>
   </head>
-  <body>
-    <audio></audio>
-
-    <div class="audio">
-      <img
-        class="audio_image"
-        src="./src/assets/img/lemonade.png"
-        id="thumbnail"
-      />
-      <div class="audio_details">
-        <div class="details_controls">
-          <img
-            class="btn-play"
-            src="./src/assets/svg/play.png"
-            onclick="togglePlay()"
-            id="play-pause"
-          />
-          <div class="details_artist-title">
-            <div class="song-artist">Beyonce</div>
-            <div class="song-title">Don't Hurt Yourself</div>
-          </div>
-
-          <div class="details_back-fwd">
-            <img
-              class="btn"
-              src="./src/assets/svg/backward.png"
-              onclick="previous()"
-              id="previous-song"
-            />
-            <img
-              class="btn"
-              src="./src/assets/svg/forward.png"
-              onclick="next()"
-              id="next-song"
-            />
-          </div>
-        </div>
-        <div class="durationTime">3:53</div>
-        <input
-          type="range"
-          id="progress-bar"
-          min="0"
-          max="233.717551"
-          value="0"
-          onchange="changeProgressBar()"
-        />
-        <div class="currentTime">1:04</div>
-      </div>
-    </div>
-
+  <body class="body-background">
+    <h1>Audio-player</h1>
+    <div id="root"></div>
     <script src="src/index.js"></script>
   </body>
 </html>
