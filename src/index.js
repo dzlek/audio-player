@@ -63,6 +63,7 @@ const playlist = [
     cover: "src/assets/img/Queen_-_Bohemian_Rhapsody.jpg",
   },
 ];
+
 const root = document.getElementById("root");
 
 const firstTrack = playlist.find((track) => track.id === 1);
@@ -73,7 +74,7 @@ const html = `
 <div class="audio_wrapper">
         <img
           class="audio_image"
-          src="./src/assets/img/Aerosmith - Dream On.jpg"
+          src='${firstTrack.cover}'
           id="thumbnail"
         />
         </div>
@@ -129,6 +130,8 @@ const durationTime = document.getElementById("durationTime");
 const songArtist = document.getElementById("song-artist");
 const songTitle = document.getElementById("song-title");
 const progressBar = document.getElementById("progress-bar");
+
+body.style.backgroundImage = `url(${thumbnail.src})`;
 
 let id = 1;
 let isPlay = false;
